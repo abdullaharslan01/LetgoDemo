@@ -13,9 +13,10 @@
 		F56A0FD42BD6689400508DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A0FD32BD6689400508DCF /* Assets.xcassets */; };
 		F56A0FD72BD6689400508DCF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F56A0FD62BD6689400508DCF /* Base */; };
 		F56A0FEE2BD6699300508DCF /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FED2BD6699300508DCF /* MainPageVC.swift */; };
-		F56A0FF52BD669DD00508DCF /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FF42BD669DD00508DCF /* LoginPageVC.swift */; };
-		F56A0FF72BD669E600508DCF /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FF62BD669E600508DCF /* RegisterVC.swift */; };
+		F56A0FF52BD669DD00508DCF /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FF42BD669DD00508DCF /* RegisterVC.swift */; };
+		F56A0FF72BD669E600508DCF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FF62BD669E600508DCF /* LoginVC.swift */; };
 		F56A0FF92BD669FC00508DCF /* Button+Radious.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FF82BD669FC00508DCF /* Button+Radious.swift */; };
+		F56A0FFC2BD672A900508DCF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FFB2BD672A900508DCF /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		F56A0FD62BD6689400508DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56A0FD82BD6689400508DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F56A0FED2BD6699300508DCF /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
-		F56A0FF42BD669DD00508DCF /* LoginPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
-		F56A0FF62BD669E600508DCF /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		F56A0FF42BD669DD00508DCF /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		F56A0FF62BD669E600508DCF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F56A0FF82BD669FC00508DCF /* Button+Radious.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+Radious.swift"; sourceTree = "<group>"; };
+		F56A0FFB2BD672A900508DCF /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		F56A0FC92BD6689200508DCF /* Letgo */ = {
 			isa = PBXGroup;
 			children = (
+				F56A0FFA2BD6728F00508DCF /* Enums */,
 				F56A0FCA2BD6689200508DCF /* AppDelegate.swift */,
 				F56A0FCC2BD6689200508DCF /* SceneDelegate.swift */,
 				F56A0FF32BD669B400508DCF /* WebService */,
@@ -96,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				F56A0FED2BD6699300508DCF /* MainPageVC.swift */,
-				F56A0FF42BD669DD00508DCF /* LoginPageVC.swift */,
-				F56A0FF62BD669E600508DCF /* RegisterVC.swift */,
+				F56A0FF42BD669DD00508DCF /* RegisterVC.swift */,
+				F56A0FF62BD669E600508DCF /* LoginVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +117,14 @@
 			children = (
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		F56A0FFA2BD6728F00508DCF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F56A0FFB2BD672A900508DCF /* Enums.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,10 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56A0FF72BD669E600508DCF /* RegisterVC.swift in Sources */,
-				F56A0FF52BD669DD00508DCF /* LoginPageVC.swift in Sources */,
+				F56A0FF72BD669E600508DCF /* LoginVC.swift in Sources */,
+				F56A0FF52BD669DD00508DCF /* RegisterVC.swift in Sources */,
 				F56A0FCB2BD6689200508DCF /* AppDelegate.swift in Sources */,
 				F56A0FEE2BD6699300508DCF /* MainPageVC.swift in Sources */,
+				F56A0FFC2BD672A900508DCF /* Enums.swift in Sources */,
 				F56A0FCD2BD6689200508DCF /* SceneDelegate.swift in Sources */,
 				F56A0FF92BD669FC00508DCF /* Button+Radious.swift in Sources */,
 			);

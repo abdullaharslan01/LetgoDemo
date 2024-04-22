@@ -1,10 +1,3 @@
-//
-//  Button+Radious.swift
-//  SellGo
-//
-//  Created by abdullah on 22.04.2024.
-//
-
 import UIKit
 
 extension UIButton {
@@ -17,4 +10,26 @@ extension UIButton {
             clipsToBounds = true
         }
     }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor? {
+        get {
+            if let color = layer.borderColor {
+                return UIColor(cgColor: color)
+            }
+            return nil
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+        }
+    }
 }
+

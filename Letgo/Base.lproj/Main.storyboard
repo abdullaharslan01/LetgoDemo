@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9UW-L3-KcF">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main PageVC-->
+        <scene sceneID="h0d-Su-lhK">
+            <objects>
+                <viewController id="cYl-MU-tR1" customClass="MainPageVC" customModule="Letgo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ekm-zy-KOA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-RM-F02">
+                                <rect key="frame" x="99.666666666666671" y="781.66666666666663" width="193.66666666666663" height="30.333333333333371"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If You Continue You Are Accepting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9G-kM-X9J">
+                                        <rect key="frame" x="0.0" y="0.0" width="193.66666666666666" height="14.333333333333334"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ht0-8O-HFd">
+                                        <rect key="frame" x="22.666666666666657" y="16.333333333333371" width="148.66666666666666" height="14"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="letgo Terms And Conditions">
+                                                <attributes>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The trusted community of buyers and sellers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc9-r9-5l1">
+                                <rect key="frame" x="56.666666666666657" y="494.33333333333326" width="280" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="UN4-LJ-f2c"/>
+                                    <constraint firstAttribute="height" constant="50" id="eyV-Cd-FL0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rEg-gJ-wPy">
+                                <rect key="frame" x="25" y="594.33333333333337" width="343" height="167.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eh2-QO-Dm8">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34.333333333333336"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="main"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Continue with Phone" imagePadding="10">
+                                            <imageReference key="image" image="iphone.gen1" catalog="system" symbolScale="large"/>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleCallout"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWq-gr-Zus">
+                                        <rect key="frame" x="0.0" y="44.333333333333258" width="343" height="34.333333333333343"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="main"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Continue with Google" imagePadding="10">
+                                            <imageReference key="image" image="g.circle" catalog="system" symbolScale="large"/>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleCallout"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5B-bg-sA2">
+                                        <rect key="frame" x="0.0" y="88.666666666666629" width="343" height="34.333333333333343"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="main"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Continue with Email" imagePadding="10">
+                                            <imageReference key="image" image="envelope.fill" catalog="system" symbolScale="medium"/>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleCallout"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7z4-Ii-0Yq">
+                                        <rect key="frame" x="0.0" y="133" width="343" height="34.333333333333343"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.97647058819999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign in with Apple" imagePadding="10">
+                                            <imageReference key="image" image="applelogo" catalog="system" symbolScale="small"/>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleCallout"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to letgo" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wde-vD-eTg">
+                                <rect key="frame" x="113.66666666666667" y="443" width="165.66666666666663" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-login" translatesAutoresizingMaskIntoConstraints="NO" id="Bzx-F9-Epp">
+                                <rect key="frame" x="106.66666666666669" y="253" width="180" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Bad-II-5cc"/>
+                                    <constraint firstAttribute="height" constant="140" id="TKW-kM-qAa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZlO-9N-PQ4"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="yc9-r9-5l1" firstAttribute="top" secondItem="wde-vD-eTg" secondAttribute="bottom" constant="25" id="913-hC-uE3"/>
+                            <constraint firstItem="pRn-RM-F02" firstAttribute="top" secondItem="rEg-gJ-wPy" secondAttribute="bottom" constant="20" id="F0O-XD-Ux2"/>
+                            <constraint firstItem="ZlO-9N-PQ4" firstAttribute="trailing" secondItem="rEg-gJ-wPy" secondAttribute="trailing" constant="25" id="R1h-oB-HwY"/>
+                            <constraint firstAttribute="bottom" secondItem="pRn-RM-F02" secondAttribute="bottom" constant="40" id="RZV-1c-eXW"/>
+                            <constraint firstItem="wde-vD-eTg" firstAttribute="centerX" secondItem="Ekm-zy-KOA" secondAttribute="centerX" id="UF8-Fs-NyO"/>
+                            <constraint firstItem="yc9-r9-5l1" firstAttribute="centerX" secondItem="Ekm-zy-KOA" secondAttribute="centerX" id="V8h-re-7da"/>
+                            <constraint firstItem="rEg-gJ-wPy" firstAttribute="top" secondItem="yc9-r9-5l1" secondAttribute="bottom" constant="50" id="Wh2-Dv-dbk"/>
+                            <constraint firstItem="pRn-RM-F02" firstAttribute="centerX" secondItem="Ekm-zy-KOA" secondAttribute="centerX" id="YDw-qr-FVO"/>
+                            <constraint firstItem="wde-vD-eTg" firstAttribute="top" secondItem="Bzx-F9-Epp" secondAttribute="bottom" constant="50" id="mC3-q4-L7i"/>
+                            <constraint firstItem="rEg-gJ-wPy" firstAttribute="leading" secondItem="ZlO-9N-PQ4" secondAttribute="leading" constant="25" id="xEM-Qq-k9F"/>
+                            <constraint firstItem="Bzx-F9-Epp" firstAttribute="centerX" secondItem="Ekm-zy-KOA" secondAttribute="centerX" id="ysb-rj-62f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2wo-vL-khm">
+                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" style="done" id="lXy-Oe-FFj">
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="gyr-l0-K12">
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ee1-zh-Ay4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="k8O-dV-RBO">
+            <objects>
+                <viewController id="Utr-ED-Bhc" customClass="RegisterVC" customModule="Letgo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ng-r0-ASg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oXx-mW-co1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BgG-vI-e6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759.5419847328244" y="-19.014084507042256"/>
+        </scene>
+        <!--Login PageVC-->
+        <scene sceneID="nq8-CY-fCp">
+            <objects>
+                <viewController id="72C-Xa-N8i" customClass="LoginPageVC" customModule="Letgo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OVN-gu-SnM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g1A-vS-scf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHR-qP-C84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2527.4809160305344" y="-42.253521126760567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="34C-le-esa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9UW-L3-KcF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="565-Bd-KuS">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cYl-MU-tR1" kind="relationship" relationship="rootViewController" id="IUu-6V-gjG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpF-nI-gB2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applelogo" catalog="system" width="105" height="128"/>
+        <image name="envelope.fill" catalog="system" width="128" height="85"/>
+        <image name="g.circle" catalog="system" width="128" height="123"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="iphone.gen1" catalog="system" width="112" height="128"/>
+        <image name="logo-login" width="499" height="375"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="main">
+            <color red="1" green="0.24705882352941178" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

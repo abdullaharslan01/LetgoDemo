@@ -21,6 +21,10 @@ class LoginVC: UIViewController {
         passwordTextField.delegate = self
         updateButtonAppearance()
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
     // MARK: - Actions
 

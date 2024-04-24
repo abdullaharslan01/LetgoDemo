@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F51A8E1F2BD7C2BF006DB184 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A8E1E2BD7C2BF006DB184 /* RegisterModel.swift */; };
+		F51A8E212BD7C3F3006DB184 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A8E202BD7C3F3006DB184 /* RegisterViewModel.swift */; };
 		F56A0FCB2BD6689200508DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FCA2BD6689200508DCF /* AppDelegate.swift */; };
 		F56A0FCD2BD6689200508DCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FCC2BD6689200508DCF /* SceneDelegate.swift */; };
 		F56A0FD22BD6689200508DCF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F56A0FD12BD6689200508DCF /* Base */; };
@@ -17,9 +19,17 @@
 		F56A0FF72BD669E600508DCF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FF62BD669E600508DCF /* LoginVC.swift */; };
 		F56A0FF92BD669FC00508DCF /* Button+Radious.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FF82BD669FC00508DCF /* Button+Radious.swift */; };
 		F56A0FFC2BD672A900508DCF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A0FFB2BD672A900508DCF /* Enums.swift */; };
+		F5E30FF92BD983A400A9EBA9 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E30FF82BD983A400A9EBA9 /* AlertController.swift */; };
+		F5E30FFD2BD990CD00A9EBA9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E30FFC2BD990CD00A9EBA9 /* HomeVC.swift */; };
+		F5E30FFF2BD990DD00A9EBA9 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E30FFE2BD990DD00A9EBA9 /* ChatsVC.swift */; };
+		F5E310012BD990E800A9EBA9 /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E310002BD990E800A9EBA9 /* SellVC.swift */; };
+		F5E310032BD990F700A9EBA9 /* MyAddsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E310022BD990F700A9EBA9 /* MyAddsVC.swift */; };
+		F5E310052BD9910500A9EBA9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E310042BD9910500A9EBA9 /* AccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F51A8E1E2BD7C2BF006DB184 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		F51A8E202BD7C3F3006DB184 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		F56A0FC72BD6689200508DCF /* Letgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Letgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56A0FCA2BD6689200508DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56A0FCC2BD6689200508DCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +42,12 @@
 		F56A0FF62BD669E600508DCF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F56A0FF82BD669FC00508DCF /* Button+Radious.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+Radious.swift"; sourceTree = "<group>"; };
 		F56A0FFB2BD672A900508DCF /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F5E30FF82BD983A400A9EBA9 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		F5E30FFC2BD990CD00A9EBA9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F5E30FFE2BD990DD00A9EBA9 /* ChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
+		F5E310002BD990E800A9EBA9 /* SellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellVC.swift; sourceTree = "<group>"; };
+		F5E310022BD990F700A9EBA9 /* MyAddsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAddsVC.swift; sourceTree = "<group>"; };
+		F5E310042BD9910500A9EBA9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +80,13 @@
 		F56A0FC92BD6689200508DCF /* Letgo */ = {
 			isa = PBXGroup;
 			children = (
-				F56A0FFA2BD6728F00508DCF /* Enums */,
 				F56A0FCA2BD6689200508DCF /* AppDelegate.swift */,
 				F56A0FCC2BD6689200508DCF /* SceneDelegate.swift */,
+				F56A0FFA2BD6728F00508DCF /* Enums */,
+				F56A0FF02BD6699C00508DCF /* Model */,
 				F56A0FF32BD669B400508DCF /* WebService */,
 				F56A0FF22BD669A800508DCF /* ViewModel */,
 				F56A0FF12BD669A300508DCF /* View */,
-				F56A0FF02BD6699C00508DCF /* Model */,
 				F56A0FEF2BD6699700508DCF /* Extensions */,
 				F56A0FD02BD6689200508DCF /* Main.storyboard */,
 				F56A0FD52BD6689400508DCF /* LaunchScreen.storyboard */,
@@ -84,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				F56A0FF82BD669FC00508DCF /* Button+Radious.swift */,
+				F5E30FF82BD983A400A9EBA9 /* AlertController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -91,6 +108,7 @@
 		F56A0FF02BD6699C00508DCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F51A8E1E2BD7C2BF006DB184 /* RegisterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,9 +116,8 @@
 		F56A0FF12BD669A300508DCF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F56A0FED2BD6699300508DCF /* MainPageVC.swift */,
-				F56A0FF42BD669DD00508DCF /* RegisterVC.swift */,
-				F56A0FF62BD669E600508DCF /* LoginVC.swift */,
+				F5E30FFB2BD990B500A9EBA9 /* HOME */,
+				F5E30FFA2BD990A000A9EBA9 /* LOGIN */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +125,7 @@
 		F56A0FF22BD669A800508DCF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F51A8E202BD7C3F3006DB184 /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -125,6 +143,28 @@
 				F56A0FFB2BD672A900508DCF /* Enums.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		F5E30FFA2BD990A000A9EBA9 /* LOGIN */ = {
+			isa = PBXGroup;
+			children = (
+				F56A0FED2BD6699300508DCF /* MainPageVC.swift */,
+				F56A0FF62BD669E600508DCF /* LoginVC.swift */,
+				F56A0FF42BD669DD00508DCF /* RegisterVC.swift */,
+			);
+			path = LOGIN;
+			sourceTree = "<group>";
+		};
+		F5E30FFB2BD990B500A9EBA9 /* HOME */ = {
+			isa = PBXGroup;
+			children = (
+				F5E30FFC2BD990CD00A9EBA9 /* HomeVC.swift */,
+				F5E30FFE2BD990DD00A9EBA9 /* ChatsVC.swift */,
+				F5E310002BD990E800A9EBA9 /* SellVC.swift */,
+				F5E310022BD990F700A9EBA9 /* MyAddsVC.swift */,
+				F5E310042BD9910500A9EBA9 /* AccountVC.swift */,
+			);
+			path = HOME;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,12 +238,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E30FFF2BD990DD00A9EBA9 /* ChatsVC.swift in Sources */,
 				F56A0FF72BD669E600508DCF /* LoginVC.swift in Sources */,
 				F56A0FF52BD669DD00508DCF /* RegisterVC.swift in Sources */,
+				F5E310012BD990E800A9EBA9 /* SellVC.swift in Sources */,
 				F56A0FCB2BD6689200508DCF /* AppDelegate.swift in Sources */,
 				F56A0FEE2BD6699300508DCF /* MainPageVC.swift in Sources */,
+				F5E310032BD990F700A9EBA9 /* MyAddsVC.swift in Sources */,
+				F51A8E1F2BD7C2BF006DB184 /* RegisterModel.swift in Sources */,
 				F56A0FFC2BD672A900508DCF /* Enums.swift in Sources */,
+				F5E30FF92BD983A400A9EBA9 /* AlertController.swift in Sources */,
 				F56A0FCD2BD6689200508DCF /* SceneDelegate.swift in Sources */,
+				F5E310052BD9910500A9EBA9 /* AccountVC.swift in Sources */,
+				F51A8E212BD7C3F3006DB184 /* RegisterViewModel.swift in Sources */,
+				F5E30FFD2BD990CD00A9EBA9 /* HomeVC.swift in Sources */,
 				F56A0FF92BD669FC00508DCF /* Button+Radious.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

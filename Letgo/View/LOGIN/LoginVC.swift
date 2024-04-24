@@ -27,8 +27,11 @@ class LoginVC: UIViewController {
     }
 
     // MARK: - Actions
-
-    @IBAction func nextButtonTapped(_ sender: Any) {
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        
+        
+        
+        
         print(emailTextField.text ?? "", passwordTextField.text ?? "")
     }
 

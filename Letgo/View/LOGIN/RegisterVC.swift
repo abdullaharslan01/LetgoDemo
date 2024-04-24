@@ -22,12 +22,25 @@ class RegisterVC: UIViewController {
     var isEmailValid = false
     var isPasswordValid = false
     var doPasswordsMatch = false
+    
+    
+    let registerViewModel = RegisterViewModel()
 
     // MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         delegateConfiguration()
+        updateButtonAppearance()
+        
+        emailTextField.text = "abdullah@gmail.com"
+        fullNameTextField.text = "Abdullah Arslan"
+        firstPasswordTextField.text = "123456789"
+        confirmPasswordTextField.text = "123456789"
+         isFullNameValid = true
+         isEmailValid = true
+         isPasswordValid = true
+         doPasswordsMatch = true
         updateButtonAppearance()
     }
     
@@ -79,7 +92,32 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func registerButtonTapped(_ sender: Any) {
+        
+        let name = fullNameTextField.text
+        let email = emailTextField.text
+        let password = firstPasswordTextField.text
 
+        let user = User(name: name, email: email, password: password)
+
+        registerViewModel.register(user: user) { success, message in
+            DispatchQueue.main.async {
+                if success {
+                    
+                    self.showAlert(title: "SUCCESS", message: message, buttonTitle: "OK") {
+
+                        self.dismiss(animated: true)
+
+                    }
+                                    
+                    
+                    
+                } else {
+                    self.showAlert(title: "FAIL", message: message, buttonTitle: "OK") {
+                        
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -125,6 +163,10 @@ extension RegisterVC: UITextFieldDelegate {
             textField.resignFirstResponder()
             return true
         }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateButtonAppearance()
+    }
    
 
 }

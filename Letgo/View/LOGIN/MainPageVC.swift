@@ -56,6 +56,17 @@ class MainPageVC: UIViewController {
     }
     
     
+    @IBAction func test(_ sender: Any) {
+        
+        var registerViewModel = RegisterViewModel()
+        
+        registerViewModel.register(user: User(name: "Abdullah", email: "abdullaharslan1473@gmail.com", password: "Arslan27.")) { state, result in
+            print("Fonksiyon çalıştı")
+        }
+        
+        
+    }
+    
     
     // MARK: - Actions
     

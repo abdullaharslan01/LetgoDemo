@@ -13,7 +13,7 @@ class RegisterViewModel {
         
         if let name = user.name, let email = user.email, let password = user.password {
             
-            let url = URL(string: "https://abdullaharslan.com.tr/letgo/register.php")
+            let url = URL(string: "https://abdullaharslan.com.tr/letgo/uyeol.php")
             var request = URLRequest(url: url!)
             request.httpMethod = "POST"
             let postData = "adsoyad=\(name)&email=\(email)&sifre=\(password)"

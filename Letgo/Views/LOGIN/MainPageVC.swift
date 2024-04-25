@@ -51,7 +51,7 @@ class MainPageVC: UIViewController {
     
     @IBAction func continueWithEmail(_ sender: Any) {
      
-        performSegue(withIdentifier: SegueNames.registerVC.rawValue, sender: nil)
+        performSegue(withIdentifier: SegueRoutes.registerVC.rawValue, sender: nil)
         
     }
     

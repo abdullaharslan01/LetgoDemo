@@ -11,8 +11,13 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
+    // MARK: - Properties
+    
     var isEmailValid = false
     var isPasswordValid = false
+    
+    let loginViewModel = LoginViewModel()
+
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
@@ -27,16 +32,58 @@ class LoginVC: UIViewController {
     }
 
     // MARK: - Actions
+    
     @IBAction func loginButtonTapped(_ sender: Any) {
         
+        guard let email = emailTextField.text, let password = passwordTextField.text else{return}
+        
+        loginViewModel.login(email: email, password: password) { response in
+            
+            if let response = response {
+                
+                if response.success == 1 {
+                    
+                    UserPref().loginStatusSet(status: .active)
+                    
+                    DispatchQueue.main.async {
+                       
+                        UserPref().setUserInfo(user: response.liste![0])
+                        
+                        self.showAlert(title: "Success", message: response.message, buttonTitle: "OK") {
+                            self.performSegue(withIdentifier: SegueRoutes.tabbarVC.rawValue, sender: nil)
+
+                        }
+                        
+                        
+                        
+                    }
+                    
+                    
+                }
+                else {
+                    
+                    DispatchQueue.main.async {
+                        self.showAlert(title: "Fail", message: response.message, buttonTitle: "OK") {
+                            
+                        }
+                        
+                    }
+                    
+                    
+                    
+                }
+            }
+            
+            
+        }
         
         
         
-        print(emailTextField.text ?? "", passwordTextField.text ?? "")
+        
     }
 
     @IBAction func registerButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: SegueNames.registerVC.rawValue, sender: nil)
+        performSegue(withIdentifier: SegueRoutes.registerVC.rawValue, sender: nil)
     }
 
     // MARK: - Helper Methods

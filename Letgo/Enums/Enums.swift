@@ -7,8 +7,31 @@
 
 import Foundation
 
-enum SegueNames: String {
+enum SegueRoutes: String {
     case registerVC
     case loginVC
+    case tabbarVC
 }
+
+enum StoryBoarRoutes: String
+{
+    case HomePage
+    case LoginPage
+}
+
+
+
+enum UserKeys: String {
+    case userId
+    case userNameSurname
+    case userImage
+}
+
+
+enum LoginStatus: String {
+    case loginStatus
+    case active
+    case passive
+}
+
 

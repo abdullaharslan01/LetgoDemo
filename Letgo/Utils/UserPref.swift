@@ -13,7 +13,9 @@ class UserPref{
     
     // Kullancının giriş yapıp yapmadığını kontrol ediyoruz.
     func loginStatus() -> Int{
+        
         if let status = UserDefaults.standard.object(forKey: LoginStatus.loginStatus.rawValue) as? Int {
+            print(status)
             return status
         }
         return 0

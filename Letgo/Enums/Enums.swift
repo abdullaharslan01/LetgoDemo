@@ -16,7 +16,9 @@ enum SegueRoutes: String {
 enum StoryBoarRoutes: String
 {
     case HomePage
-    case LoginPage
+    case LoginMainPage
+   case TabbarLoginMainPage
+        
 }
 
 

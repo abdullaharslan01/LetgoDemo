@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         else {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let loginPage  = storyboard.instantiateViewController(identifier: StoryBoarRoutes.LoginPage.rawValue)
+            let loginPage  = storyboard.instantiateViewController(identifier: StoryBoarRoutes.TabbarLoginMainPage.rawValue)
             
             window?.rootViewController = loginPage
             

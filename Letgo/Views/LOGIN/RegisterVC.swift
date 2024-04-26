@@ -31,17 +31,7 @@ class RegisterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         delegateConfiguration()
-        updateButtonAppearance()
         
-        emailTextField.text = "abdullah@gmail.com"
-        fullNameTextField.text = "Abdullah Arslan"
-        firstPasswordTextField.text = "123456789"
-        confirmPasswordTextField.text = "123456789"
-         isFullNameValid = true
-         isEmailValid = true
-         isPasswordValid = true
-         doPasswordsMatch = true
-        updateButtonAppearance()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

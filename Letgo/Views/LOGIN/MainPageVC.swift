@@ -56,13 +56,8 @@ class MainPageVC: UIViewController {
     }
     
     
-    @IBAction func test(_ sender: Any) {
-        
-        var registerViewModel = RegisterViewModel()
-        
-        registerViewModel.register(user: User(name: "Abdullah", email: "abdullaharslan1473@gmail.com", password: "Arslan27.")) { state, result in
-            print("Fonksiyon çalıştı")
-        }
+    @IBAction func infoButton(_ sender: Any) {
+        self.showAlert(title: "About Developer", message: "This application is a demo developed by Abdullah Arslan, inspired by the current state of the Letgo application, using learned server and Swift methods. Abdullah Arslan practiced the concepts he learned by incorporating them into this application.", buttonTitle: "Show must go on")
         
         
     }

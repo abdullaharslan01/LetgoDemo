@@ -11,6 +11,7 @@ enum SegueRoutes: String {
     case registerVC
     case loginVC
     case tabbarVC
+    case detailVC
 }
 
 enum StoryBoarRoutes: String

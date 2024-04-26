@@ -34,9 +34,21 @@ class WebServices {
 
                     do {
                         
-                        let responseList = try decoder.decode(ProductModelList.self, from: data)
                         
-                        complation(responseList)
+                        
+                        var dataResponse = try decoder.decode(ProductModelList.self, from: data)
+                        
+                        if !searchText.isEmpty {
+                            
+                                
+                            dataResponse.liste = dataResponse.liste?.filter{$0.baslik!.lowercased().contains(searchText.lowercased())}
+                            
+                        }
+                        
+                        
+                        
+                        
+                        complation(dataResponse)
                     
                     } catch {
                         print("Decoder fail: ",error.localizedDescription)

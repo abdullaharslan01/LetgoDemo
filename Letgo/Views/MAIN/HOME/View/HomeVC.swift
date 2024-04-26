@@ -10,18 +10,22 @@ import UIKit
 class HomeVC: UIViewController {
 
     // MARK: - UI Elements
-    
+        
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     @IBOutlet weak var productCollectionView: UICollectionView!
     
-
+    @IBOutlet weak var searchbar: UISearchBar!
+    
     
     // MARK: - Properties
     
     var homeViewModel = HomeViewModel()
+    
+    var hasScrolled = false
 
     // MARK: - Life Cycle
     
@@ -29,7 +33,7 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        searchbar.delegate = self
         collectinViewsSetUp()
         getProductlist()
         }
@@ -117,6 +121,30 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
     }
     
     
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: SegueRoutes.detailVC.rawValue, sender: homeViewModel.productId(at: indexPath.row))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SegueRoutes.detailVC.rawValue {
+            if let destinationVC = segue.destination as? DetailVC {
+                
+                if let productItem = sender as? Product {
+                    destinationVC.productUser = productItem
+
+                }
+                
+            }
+        }
+    }
+    
+    
+    
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         switch collectionView {
@@ -136,4 +164,22 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
     }
     
     
+}
+
+extension HomeVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+       
+        
+        
+        
+        homeViewModel.getProductList(searchText: searchText) { state in
+            DispatchQueue.main.async {
+                self.productCollectionView.reloadData()
+            }
+        }
+        
+    }
+
+
 }

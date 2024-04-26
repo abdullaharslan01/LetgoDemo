@@ -14,9 +14,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var relatedAdds: UICollectionView!
-    
+    @IBOutlet weak var titleLabel: UILabel!    
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var contentLabel: UILabel!
     // MARK: - Life Cycle
@@ -52,18 +50,3 @@ class DetailVC: UIViewController {
     }
 }
 
-extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "relatedCell", for: indexPath)
-        
-        return cell
-        
-    }
-    
-    
-}

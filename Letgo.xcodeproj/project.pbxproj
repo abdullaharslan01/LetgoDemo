@@ -30,7 +30,6 @@
 		F59A7B412BDC218000594FC4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7B402BDC218000594FC4 /* CardView.swift */; };
 		F59A7B432BDC273300594FC4 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7B422BDC273300594FC4 /* WebServices.swift */; };
 		F59A7B452BDC38E200594FC4 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7B442BDC38E100594FC4 /* DetailVC.swift */; };
-		F5B956992BDC597200D51256 /* RelatedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B956982BDC597200D51256 /* RelatedCollectionViewCell.swift */; };
 		F5C34D6D2BD9AC6600094356 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C34D6C2BD9AC6600094356 /* CategoryCollectionViewCell.xib */; };
 		F5C34D6E2BD9AC6600094356 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C34D6B2BD9AC6600094356 /* CategoryCollectionViewCell.swift */; };
 		F5C34D712BD9B07300094356 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C34D702BD9B07300094356 /* CategoryModel.swift */; };
@@ -72,7 +71,6 @@
 		F59A7B402BDC218000594FC4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F59A7B422BDC273300594FC4 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		F59A7B442BDC38E100594FC4 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		F5B956982BDC597200D51256 /* RelatedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5C34D6B2BD9AC6600094356 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5C34D6C2BD9AC6600094356 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		F5C34D702BD9B07300094356 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 		F541D5EF2BDA52AA00F0A276 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
-				F5B956972BDC593400D51256 /* Related */,
 				F541D5F12BDA52D200F0A276 /* ADS */,
 				F541D5F02BDA52BC00F0A276 /* Category */,
 			);
@@ -273,14 +270,6 @@
 				F56A0FFB2BD672A900508DCF /* Enums.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		F5B956972BDC593400D51256 /* Related */ = {
-			isa = PBXGroup;
-			children = (
-				F5B956982BDC597200D51256 /* RelatedCollectionViewCell.swift */,
-			);
-			path = Related;
 			sourceTree = "<group>";
 		};
 		F5C34D6A2BD9AC4200094356 /* View */ = {
@@ -451,7 +440,6 @@
 				F5E310032BD990F700A9EBA9 /* MyAddsVC.swift in Sources */,
 				F5CCE82C2BDBE80100DAC7B3 /* MenusCell.swift in Sources */,
 				F59A7B412BDC218000594FC4 /* CardView.swift in Sources */,
-				F5B956992BDC597200D51256 /* RelatedCollectionViewCell.swift in Sources */,
 				F51A8E1F2BD7C2BF006DB184 /* RegisterModel.swift in Sources */,
 				F56A0FFC2BD672A900508DCF /* Enums.swift in Sources */,
 				F5CCE82F2BDBEB5000DAC7B3 /* AcoountViewModel.swift in Sources */,

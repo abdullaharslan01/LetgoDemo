@@ -55,9 +55,8 @@ class WebServices {
     
     func uploadAdd(product: ProductSellModel, complation: @escaping(Bool) -> Void) {
         
-        let placeHolder2 = "https://abdullaharslan.com.tr/letgo/images/products/placeholder.jpg"
+        let placeHolder = "https://abdullaharslan.com.tr/letgo/images/products/placeholder.jpg"
         
-        let placeHolder = "https://abdullaharslan.com.tr/letgo/images/products/iphone11demo.jpg"
         let kullaniciid = UserPref().getUserInfo()?.id
         let url = URL(string: "https://abdullaharslan.com.tr/letgo/ekle.php")
         var request = URLRequest(url: url!)

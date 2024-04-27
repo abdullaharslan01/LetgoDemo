@@ -9,6 +9,11 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    
+    
+    
+    
+    
     // MARK: - UI Elements
         
     @IBOutlet weak var scrollView: UIScrollView!
@@ -36,6 +41,8 @@ class HomeVC: UIViewController {
         searchbar.delegate = self
         collectinViewsSetUp()
         getProductlist()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(refleshScreen(notification:)), name: .refleshScreen, object: nil)
         }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -45,6 +52,10 @@ class HomeVC: UIViewController {
     
     // MARK:  - Functions
     
+    
+    @objc func refleshScreen(notification: NSNotification) {
+        getProductlist()
+    }
     
     func collectinViewsSetUp() {
         

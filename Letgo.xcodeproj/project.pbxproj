@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50394522BDD232D00377D1B /* ProductSellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50394512BDD232D00377D1B /* ProductSellModel.swift */; };
+		F50394542BDD233C00377D1B /* ProductSellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50394532BDD233C00377D1B /* ProductSellViewModel.swift */; };
+		F50394572BDD3F9900377D1B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F50394562BDD3F9900377D1B /* SDWebImage */; };
+		F50394592BDD3F9900377D1B /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F50394582BDD3F9900377D1B /* SDWebImageMapKit */; };
+		F503945B2BDD5ECF00377D1B /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503945A2BDD5ECF00377D1B /* Notification.swift */; };
 		F51A8E1F2BD7C2BF006DB184 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A8E1E2BD7C2BF006DB184 /* RegisterModel.swift */; };
 		F51A8E212BD7C3F3006DB184 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A8E202BD7C3F3006DB184 /* RegisterViewModel.swift */; };
 		F541D5F32BDA532A00F0A276 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541D5F22BDA532A00F0A276 /* HomeViewModel.swift */; };
@@ -46,6 +51,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F50394512BDD232D00377D1B /* ProductSellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSellModel.swift; sourceTree = "<group>"; };
+		F50394532BDD233C00377D1B /* ProductSellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSellViewModel.swift; sourceTree = "<group>"; };
+		F503945A2BDD5ECF00377D1B /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		F51A8E1E2BD7C2BF006DB184 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		F51A8E202BD7C3F3006DB184 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		F541D5F22BDA532A00F0A276 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -91,12 +99,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50394592BDD3F9900377D1B /* SDWebImageMapKit in Frameworks */,
+				F50394572BDD3F9900377D1B /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F503944D2BDD22A500377D1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F50394512BDD232D00377D1B /* ProductSellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F503944E2BDD22AC00377D1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5E310002BD990E800A9EBA9 /* SellVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F503944F2BDD22B200377D1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F50394532BDD233C00377D1B /* ProductSellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F541D5E62BDA520400F0A276 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +171,9 @@
 		F541D5EB2BDA526500F0A276 /* SELL */ = {
 			isa = PBXGroup;
 			children = (
-				F5E310002BD990E800A9EBA9 /* SellVC.swift */,
+				F503944F2BDD22B200377D1B /* ViewModel */,
+				F503944E2BDD22AC00377D1B /* View */,
+				F503944D2BDD22A500377D1B /* Model */,
 			);
 			path = SELL;
 			sourceTree = "<group>";
@@ -243,6 +279,7 @@
 			children = (
 				F56A0FF82BD669FC00508DCF /* Button.swift */,
 				F5E30FF82BD983A400A9EBA9 /* ViewController.swift */,
+				F503945A2BDD5ECF00377D1B /* Notification.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -365,6 +402,10 @@
 			dependencies = (
 			);
 			name = Letgo;
+			packageProductDependencies = (
+				F50394562BDD3F9900377D1B /* SDWebImage */,
+				F50394582BDD3F9900377D1B /* SDWebImageMapKit */,
+			);
 			productName = Letgo;
 			productReference = F56A0FC72BD6689200508DCF /* Letgo.app */;
 			productType = "com.apple.product-type.application";
@@ -393,6 +434,9 @@
 				Base,
 			);
 			mainGroup = F56A0FBE2BD6689200508DCF;
+			packageReferences = (
+				F50394552BDD3F9900377D1B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = F56A0FC82BD6689200508DCF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -431,6 +475,7 @@
 				F59A7B452BDC38E200594FC4 /* DetailVC.swift in Sources */,
 				F59A7B3D2BDC0D2200594FC4 /* ProductModel.swift in Sources */,
 				F5C34D712BD9B07300094356 /* CategoryModel.swift in Sources */,
+				F503945B2BDD5ECF00377D1B /* Notification.swift in Sources */,
 				F59A7B3B2BDC082100594FC4 /* AdsCollectionViewCell.swift in Sources */,
 				F5E310012BD990E800A9EBA9 /* SellVC.swift in Sources */,
 				F56A0FCB2BD6689200508DCF /* AppDelegate.swift in Sources */,
@@ -441,11 +486,13 @@
 				F5CCE82C2BDBE80100DAC7B3 /* MenusCell.swift in Sources */,
 				F59A7B412BDC218000594FC4 /* CardView.swift in Sources */,
 				F51A8E1F2BD7C2BF006DB184 /* RegisterModel.swift in Sources */,
+				F50394542BDD233C00377D1B /* ProductSellViewModel.swift in Sources */,
 				F56A0FFC2BD672A900508DCF /* Enums.swift in Sources */,
 				F5CCE82F2BDBEB5000DAC7B3 /* AcoountViewModel.swift in Sources */,
 				F5E30FF92BD983A400A9EBA9 /* ViewController.swift in Sources */,
 				F56A0FCD2BD6689200508DCF /* SceneDelegate.swift in Sources */,
 				F5E310052BD9910500A9EBA9 /* AccountVC.swift in Sources */,
+				F50394522BDD232D00377D1B /* ProductSellModel.swift in Sources */,
 				F51A8E212BD7C3F3006DB184 /* RegisterViewModel.swift in Sources */,
 				F59A7B372BDC035900594FC4 /* TabbarVC.swift in Sources */,
 				F5E30FFD2BD990CD00A9EBA9 /* HomeVC.swift in Sources */,
@@ -675,6 +722,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F50394552BDD3F9900377D1B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F50394562BDD3F9900377D1B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F50394552BDD3F9900377D1B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F50394582BDD3F9900377D1B /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F50394552BDD3F9900377D1B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F56A0FBF2BD6689200508DCF /* Project object */;
 }

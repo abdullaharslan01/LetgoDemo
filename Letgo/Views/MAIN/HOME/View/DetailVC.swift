@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class DetailVC: UIViewController {
 
@@ -35,9 +37,13 @@ class DetailVC: UIViewController {
     
     func configure(){
         
+        var image = productUser?.resim ?? "https://abdullaharslan.com.tr/letgo/images/products/placeholder.jpg"
+        
+        detailImage.sd_setImage(with: URL(string: image)!)
+        
         titleLabel.text = productUser?.baslik ?? ""
         contentLabel.text = productUser?.icerik ?? ""
-        detailImage.image = UIImage(named: "teknoloji")
+    
         priceLabel.text = "\(productUser?.fiyat ?? "0") TL"
         userLabel.text  = "User \(productUser?.kullaniciid ?? "Unknown")"
     }

@@ -7,6 +7,8 @@
 
 import UIKit
 
+import SDWebImage
+
 class AdsCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var productImage: UIImageView!
@@ -28,7 +30,7 @@ class AdsCollectionViewCell: UICollectionViewCell {
     func configure(with product: Product?) {
         
         if let product = product {
-            productImage.image = UIImage(named: "ev")
+            productImage.sd_setImage(with: URL(string: product.resim!))
             
             productPrice.text = "\(product.fiyat?.description ?? "0") TL"
             productTitle.text = product.baslik

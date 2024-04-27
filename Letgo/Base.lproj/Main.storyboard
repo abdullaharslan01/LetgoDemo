@@ -580,7 +580,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4te-qI-B8c">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4te-qI-B8c">
                                                 <rect key="frame" x="0.0" y="455" width="393" height="1545"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="10" id="2rg-UR-9kd">
@@ -841,7 +841,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDB-Co-dYN">
-                                                <rect key="frame" x="20" y="829" width="323" height="20.333333333333371"/>
+                                                <rect key="frame" x="20" y="829" width="353" height="20.333333333333371"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -959,7 +959,7 @@
                                             <constraint firstItem="EUg-XL-w87" firstAttribute="leading" secondItem="cuK-PN-bmO" secondAttribute="leading" id="CJ9-9c-FZe"/>
                                             <constraint firstItem="VmI-Ko-wnf" firstAttribute="leading" secondItem="cuK-PN-bmO" secondAttribute="leading" constant="10" id="E52-Cp-jZG"/>
                                             <constraint firstItem="vEi-u4-UlL" firstAttribute="top" secondItem="jSC-4y-kwD" secondAttribute="bottom" constant="20" id="En7-XU-P5r"/>
-                                            <constraint firstAttribute="trailing" secondItem="CDB-Co-dYN" secondAttribute="trailing" constant="50" id="GWz-Ic-TKy"/>
+                                            <constraint firstAttribute="trailing" secondItem="CDB-Co-dYN" secondAttribute="trailing" constant="20" id="GWz-Ic-TKy"/>
                                             <constraint firstItem="VkF-dc-WO0" firstAttribute="top" secondItem="f5n-RF-ea8" secondAttribute="bottom" constant="10" id="JW1-bd-v9G"/>
                                             <constraint firstItem="vEi-u4-UlL" firstAttribute="leading" secondItem="cuK-PN-bmO" secondAttribute="leading" id="Lv5-G3-iqp"/>
                                             <constraint firstAttribute="trailing" secondItem="7dD-CC-7oC" secondAttribute="trailing" constant="25" id="NWF-tm-SPo"/>
@@ -1067,7 +1067,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8xJ-xR-WuA">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8xJ-xR-WuA">
                                 <rect key="frame" x="10" y="55.666666666666657" width="373" height="210.00000000000003"/>
                                 <color key="tintColor" name="main"/>
                             </imageView>
@@ -1077,7 +1077,7 @@
                                     <constraint firstAttribute="height" constant="34" id="xGG-HV-hiU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kja-vc-h23">
                                 <rect key="frame" x="20" y="361" width="353" height="34"/>
@@ -1093,7 +1093,7 @@
                                     <constraint firstAttribute="height" constant="34" id="6Er-pb-Ckc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EP-xe-J9H">
                                 <rect key="frame" x="20.000000000000004" y="479" width="36.333333333333343" height="18"/>
@@ -1112,7 +1112,7 @@
                                     <segment title="Worn"/>
                                 </segments>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eix-Ee-13d" customClass="I">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eix-Ee-13d" customClass="CardView" customModule="Letgo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="723" width="393" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byT-r1-9N5">
@@ -1144,6 +1144,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginButtonTapped:" destination="Utr-ED-Bhc" eventType="touchUpInside" id="9MO-5K-FlQ"/>
+                                            <action selector="sellButtonTapped:" destination="TUk-BS-fu9" eventType="touchUpInside" id="wGf-CA-HrL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1185,6 +1186,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="SELL" image="camera.circle" catalog="system" id="sPF-as-wb8"/>
+                    <connections>
+                        <outlet property="sellDescription" destination="hR2-9r-mgA" id="ydW-ux-3xi"/>
+                        <outlet property="sellImageView" destination="8xJ-xR-WuA" id="17y-JJ-HXH"/>
+                        <outlet property="sellPrice" destination="Kja-vc-h23" id="39a-Df-srd"/>
+                        <outlet property="sellState" destination="rOy-Ac-6k6" id="9QY-5k-8ob"/>
+                        <outlet property="sellTitle" destination="FAJ-lg-erK" id="y0u-Ld-lQI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rK-T2-j7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

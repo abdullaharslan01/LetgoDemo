@@ -361,8 +361,71 @@
                     <view key="view" contentMode="scaleToFill" id="8fw-Lm-san">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gve-GC-Bev">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="NwW-6r-lTj"/>
+                                    <constraint firstAttribute="height" constant="44" id="Q2s-As-piP"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.97647058819999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Inbox" id="X2u-GB-E3S"/>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uge-lM-w8N">
+                                <rect key="frame" x="0.0" y="44" width="393" height="32"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="Buying"/>
+                                    <segment title="Selling"/>
+                                </segments>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="8vE-7P-fHM">
+                                <rect key="frame" x="20" y="277" width="353" height="298"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-Re-OpX">
+                                <rect key="frame" x="10" y="595" width="373" height="35"/>
+                                <color key="backgroundColor" name="main"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Sws-6l-PAz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="YhS-C3-kPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start messaging"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Utr-ED-Bhc" eventType="touchUpInside" id="moK-R3-hUc"/>
+                                    <action selector="viewAndEditProfileTapped:" destination="mD8-Mq-OWL" eventType="touchUpInside" id="3ZI-VL-xdI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tQn-89-VcB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uge-lM-w8N" firstAttribute="leading" secondItem="tQn-89-VcB" secondAttribute="leading" id="1T3-So-JIa"/>
+                            <constraint firstItem="kZi-Re-OpX" firstAttribute="leading" secondItem="tQn-89-VcB" secondAttribute="leading" constant="10" id="3xE-6b-5ti"/>
+                            <constraint firstItem="8vE-7P-fHM" firstAttribute="height" secondItem="8fw-Lm-san" secondAttribute="height" multiplier="0.35" id="BXV-aU-MOt"/>
+                            <constraint firstItem="8vE-7P-fHM" firstAttribute="centerY" secondItem="8fw-Lm-san" secondAttribute="centerY" id="Esb-xT-YJ6"/>
+                            <constraint firstItem="tQn-89-VcB" firstAttribute="trailing" secondItem="uge-lM-w8N" secondAttribute="trailing" id="Gs3-Mf-DNz"/>
+                            <constraint firstItem="tQn-89-VcB" firstAttribute="trailing" secondItem="8vE-7P-fHM" secondAttribute="trailing" constant="20" id="dj5-tT-5Ui"/>
+                            <constraint firstAttribute="trailing" secondItem="gve-GC-Bev" secondAttribute="trailing" id="eKO-L7-X7v"/>
+                            <constraint firstItem="8vE-7P-fHM" firstAttribute="leading" secondItem="tQn-89-VcB" secondAttribute="leading" constant="20" id="gsw-Nm-Wzv"/>
+                            <constraint firstItem="tQn-89-VcB" firstAttribute="trailing" secondItem="kZi-Re-OpX" secondAttribute="trailing" constant="10" id="ihY-ii-5hu"/>
+                            <constraint firstItem="kZi-Re-OpX" firstAttribute="top" secondItem="8vE-7P-fHM" secondAttribute="bottom" constant="20" id="kxC-hg-rYX"/>
+                            <constraint firstItem="gve-GC-Bev" firstAttribute="top" secondItem="tQn-89-VcB" secondAttribute="top" id="oR2-ot-zZn"/>
+                            <constraint firstItem="gve-GC-Bev" firstAttribute="leading" secondItem="tQn-89-VcB" secondAttribute="leading" id="vDf-Ou-jZ6"/>
+                            <constraint firstItem="uge-lM-w8N" firstAttribute="top" secondItem="gve-GC-Bev" secondAttribute="bottom" id="zNR-J8-pd5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="CHATS" image="ellipsis.message.fill" catalog="system" id="cFP-i9-0t6"/>
                 </viewController>
@@ -1470,6 +1533,7 @@
         <image name="applelogo" catalog="system" width="105" height="128"/>
         <image name="banner" width="541" height="273"/>
         <image name="camera.circle" catalog="system" width="128" height="123"/>
+        <image name="chat" width="786" height="626"/>
         <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>

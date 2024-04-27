@@ -377,10 +377,72 @@
                     <view key="view" contentMode="scaleToFill" id="2T3-Gm-rJL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyn-UU-f4x">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zZP-Bb-jwn"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="MY ADS" id="EVH-zr-Xkx"/>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aH3-9H-eB6">
+                                <rect key="frame" x="0.0" y="44" width="393" height="32"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Ads"/>
+                                    <segment title="Favourites"/>
+                                </segments>
+                                <color key="tintColor" name="main"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="L1C-cc-3J7" eventType="valueChanged" id="eQC-dh-hf6"/>
+                                </connections>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="al1-KQ-9OP">
+                                <rect key="frame" x="0.0" y="95" width="393" height="708"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="10" id="zTa-y9-rA4">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qTm-o4-2mA">
+                                        <rect key="frame" x="10" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SCc-En-1dn">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="AiF-YA-8Im"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pyn-UU-f4x" firstAttribute="top" secondItem="AiF-YA-8Im" secondAttribute="top" id="2dI-W3-EhX"/>
+                            <constraint firstItem="AiF-YA-8Im" firstAttribute="trailing" secondItem="Pyn-UU-f4x" secondAttribute="trailing" id="BQv-3M-JeT"/>
+                            <constraint firstItem="Pyn-UU-f4x" firstAttribute="leading" secondItem="2T3-Gm-rJL" secondAttribute="leading" id="CKL-u9-oxF"/>
+                            <constraint firstItem="AiF-YA-8Im" firstAttribute="bottom" secondItem="al1-KQ-9OP" secondAttribute="bottom" id="J9I-PC-odr"/>
+                            <constraint firstItem="aH3-9H-eB6" firstAttribute="leading" secondItem="AiF-YA-8Im" secondAttribute="leading" id="Jda-oE-wgZ"/>
+                            <constraint firstItem="al1-KQ-9OP" firstAttribute="leading" secondItem="AiF-YA-8Im" secondAttribute="leading" id="LnK-aH-gWu"/>
+                            <constraint firstItem="AiF-YA-8Im" firstAttribute="trailing" secondItem="al1-KQ-9OP" secondAttribute="trailing" id="WGt-dM-pnp"/>
+                            <constraint firstItem="aH3-9H-eB6" firstAttribute="top" secondItem="Pyn-UU-f4x" secondAttribute="bottom" id="bWe-yj-pw2"/>
+                            <constraint firstItem="AiF-YA-8Im" firstAttribute="trailing" secondItem="aH3-9H-eB6" secondAttribute="trailing" id="kXr-gl-vp0"/>
+                            <constraint firstItem="al1-KQ-9OP" firstAttribute="top" secondItem="aH3-9H-eB6" secondAttribute="bottom" constant="20" id="oOf-jN-Y2x"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="MY ADS" image="heart.fill" catalog="system" id="k0j-1t-f58"/>
+                    <connections>
+                        <outlet property="myAddsCollectionView" destination="al1-KQ-9OP" id="eIf-aK-fhF"/>
+                        <outlet property="segmentController" destination="aH3-9H-eB6" id="gA2-Ig-7bV"/>
+                        <segue destination="ahM-PV-agh" kind="presentation" identifier="detailVC2" modalPresentationStyle="fullScreen" id="TEk-bh-Ezu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4B-d8-qmi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -687,7 +749,11 @@
                                         </barButtonItem>
                                         <rightBarButtonItems>
                                             <barButtonItem image="heart" catalog="system" style="done" id="C5u-2L-Ijm"/>
-                                            <barButtonItem image="square.and.arrow.up" catalog="system" id="ghY-Pw-TYp"/>
+                                            <barButtonItem image="square.and.arrow.up" catalog="system" id="ghY-Pw-TYp">
+                                                <connections>
+                                                    <action selector="shareButtonTapped:" destination="ahM-PV-agh" id="1VY-gI-Nrm"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
@@ -1031,16 +1097,21 @@
                     </view>
                     <navigationItem key="navigationItem" id="jWj-cU-czr"/>
                     <connections>
+                        <outlet property="buttonView" destination="45Y-46-k9j" id="rfh-F5-aiK"/>
+                        <outlet property="chatButton" destination="2Qn-1g-9cl" id="YoM-sG-iL4"/>
                         <outlet property="contentLabel" destination="CDB-Co-dYN" id="yEA-hD-HCe"/>
                         <outlet property="detailImage" destination="5kJ-Km-29u" id="6ts-Ex-Zf5"/>
+                        <outlet property="favoriButton" destination="C5u-2L-Ijm" id="Uke-Qu-9Wf"/>
+                        <outlet property="makeOfferbutton" destination="5lK-6B-swe" id="Rgb-L4-Zhc"/>
                         <outlet property="priceLabel" destination="9Ch-FQ-Ks2" id="NAP-81-Yll"/>
+                        <outlet property="shareButton" destination="ghY-Pw-TYp" id="XPR-O6-phn"/>
                         <outlet property="titleLabel" destination="Ygf-9W-xnW" id="xOQ-kO-j53"/>
                         <outlet property="userLabel" destination="m6s-of-U3l" id="Q2B-BV-aqS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGY-1f-vhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="936.64122137404581" y="2230.9859154929577"/>
+            <point key="canvasLocation" x="1769" y="2123"/>
         </scene>
         <!--SELL-->
         <scene sceneID="9u2-ju-qTM">
@@ -1058,13 +1129,7 @@
                                 </constraints>
                                 <color key="barTintColor" red="0.97647058819999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="SELL" id="9kh-th-4ox">
-                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="Sqp-Ly-Mea">
-                                            <connections>
-                                                <action selector="backButtonTapped:" destination="ahM-PV-agh" id="HRa-tV-1rP"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="SELL" id="9kh-th-4ox"/>
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8xJ-xR-WuA">
@@ -1397,6 +1462,9 @@
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="TEk-bh-Ezu"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="add1" width="852" height="746"/>
         <image name="applelogo" catalog="system" width="105" height="128"/>

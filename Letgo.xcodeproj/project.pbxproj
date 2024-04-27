@@ -12,6 +12,7 @@
 		F50394572BDD3F9900377D1B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F50394562BDD3F9900377D1B /* SDWebImage */; };
 		F50394592BDD3F9900377D1B /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F50394582BDD3F9900377D1B /* SDWebImageMapKit */; };
 		F503945B2BDD5ECF00377D1B /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503945A2BDD5ECF00377D1B /* Notification.swift */; };
+		F50394602BDD649500377D1B /* MyAddsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503945F2BDD649500377D1B /* MyAddsViewModel.swift */; };
 		F51A8E1F2BD7C2BF006DB184 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A8E1E2BD7C2BF006DB184 /* RegisterModel.swift */; };
 		F51A8E212BD7C3F3006DB184 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A8E202BD7C3F3006DB184 /* RegisterViewModel.swift */; };
 		F541D5F32BDA532A00F0A276 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541D5F22BDA532A00F0A276 /* HomeViewModel.swift */; };
@@ -54,6 +55,7 @@
 		F50394512BDD232D00377D1B /* ProductSellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSellModel.swift; sourceTree = "<group>"; };
 		F50394532BDD233C00377D1B /* ProductSellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSellViewModel.swift; sourceTree = "<group>"; };
 		F503945A2BDD5ECF00377D1B /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		F503945F2BDD649500377D1B /* MyAddsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAddsViewModel.swift; sourceTree = "<group>"; };
 		F51A8E1E2BD7C2BF006DB184 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		F51A8E202BD7C3F3006DB184 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		F541D5F22BDA532A00F0A276 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -131,6 +133,29 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F503945C2BDD642200377D1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5E310022BD990F700A9EBA9 /* MyAddsVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F503945D2BDD642800377D1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F503945E2BDD642D00377D1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F503945F2BDD649500377D1B /* MyAddsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F541D5E62BDA520400F0A276 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +206,9 @@
 		F541D5EC2BDA526C00F0A276 /* ADDS */ = {
 			isa = PBXGroup;
 			children = (
-				F5E310022BD990F700A9EBA9 /* MyAddsVC.swift */,
+				F503945E2BDD642D00377D1B /* ViewModel */,
+				F503945D2BDD642800377D1B /* Model */,
+				F503945C2BDD642200377D1B /* View */,
 			);
 			path = ADDS;
 			sourceTree = "<group>";
@@ -479,6 +506,7 @@
 				F59A7B3B2BDC082100594FC4 /* AdsCollectionViewCell.swift in Sources */,
 				F5E310012BD990E800A9EBA9 /* SellVC.swift in Sources */,
 				F56A0FCB2BD6689200508DCF /* AppDelegate.swift in Sources */,
+				F50394602BDD649500377D1B /* MyAddsViewModel.swift in Sources */,
 				F56A0FEE2BD6699300508DCF /* MainPageVC.swift in Sources */,
 				F541D5F72BDA5C9300F0A276 /* LoginViewModel.swift in Sources */,
 				F541D5FA2BDA665500F0A276 /* UserPref.swift in Sources */,

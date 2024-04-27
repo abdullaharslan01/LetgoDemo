@@ -23,7 +23,7 @@ class HomeViewModel {
         CategoryModel(imageName: "giyim", categoryName: "GİYİM VE AKSESUAR")
     ]
     
-     var productList: [Product] = []
+    private var productList: [Product] = []
     
     func getProductList(searchText: String = "", complation: @escaping(_ state:Int)->Void)
     {

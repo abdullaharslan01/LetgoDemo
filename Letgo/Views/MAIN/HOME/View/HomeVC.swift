@@ -124,7 +124,7 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
             return cell
         case productCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AdsCollectionViewCell.identifier, for: indexPath) as! AdsCollectionViewCell
-            cell.configure(with: homeViewModel.productList[indexPath.row])
+            cell.configure(with: homeViewModel.productId(at: indexPath.row))
             return cell
         default:
             return UICollectionViewCell()
